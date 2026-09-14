@@ -1,0 +1,596 @@
+{
+  "brief": {
+    "topic": "Agentic AI and autonomous operations in industrial manufacturing",
+    "decision_to_support": "Determine whether Meridian should build, partner, or buy to enhance its capabilities in agentic AI and autonomous operations within industrial manufacturing.",
+    "sub_questions": [
+      "What are the most recent advancements in agentic AI technologies applicable to industrial manufacturing?",
+      "Who are the new entrants in the market for agentic AI and autonomous operations in industrial manufacturing?",
+      "What strategic partnerships have been formed in the last 18 months in the domain of autonomous operations?",
+      "What are the key differentiators of successful agentic AI implementations in industrial settings?",
+      "How are competitors leveraging agentic AI to improve operational efficiency and reduce costs?",
+      "What are the potential risks and barriers to entry for adopting agentic AI in industrial operations?"
+    ],
+    "segments": [
+      "SEG-AGENTIC-OPS",
+      "SEG-PHYSICAL-AI",
+      "SEG-FLEET-AUTONOMY",
+      "SEG-PREDICTIVE-MAINT"
+    ],
+    "search_queries": [
+      "\"agentic AI\" AND \"industrial manufacturing\" AND \"2025\"",
+      "\"autonomous operations\" AND \"new entrants\" AND \"industrial\"",
+      "\"agentic AI\" AND \"strategic partnerships\" AND \"manufacturing\"",
+      "\"autonomous operations\" AND \"product launch\" AND \"2025\"",
+      "\"agentic workflow automation\" AND \"market trends\"",
+      "\"industrial AI\" AND \"venture funding\" AND \"2025\"",
+      "\"robot foundation models\" AND \"industrial applications\"",
+      "\"predictive maintenance\" AND \"AI integration\""
+    ],
+    "filing_queries": [
+      "\"agentic AI deployment in manufacturing\"",
+      "\"autonomous operations investment\"",
+      "\"strategic partnership in AI operations\"",
+      "\"AI-driven operational efficiency\"",
+      "\"barriers to AI adoption in industry\""
+    ]
+  },
+  "external": {
+    "whats_changing": [
+      {
+        "claim": "The year 2026 is projected to be pivotal for the transformation of industrial manufacturing through agentic AI, which will enhance operational efficiency and decision-making processes.",
+        "source_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQN1FRcTZaNDF2Z0VObGNXR1YzTFBYQnBYOWdiQXRzUnJTTmk0bWJMV2dNZGRnNkFiMHBYSDRHM3lZM3M4c01GRTYzclBtSWFFckROOHY4RkQtbzE2OWhWcUZlaGY1SzNJdTZFanVEdWpzbWFSREtsZklEMDBUcUd1UFZKcDBraERWMXV2TXFxd0tSSXczU2dIU003UXNmN0R5eWItOUs4cG5MalFW?oc=5",
+        "source_title": "Manufacturing Dive",
+        "source_type": "news",
+        "published": "2026-02-23",
+        "confidence": "high",
+        "entities": [],
+        "segment": "SEG-AGENTIC-OPS"
+      },
+      {
+        "claim": "The concept of an agentic supply chain is gaining traction, emphasizing resilience through AI-driven decision-making and automation in manufacturing processes.",
+        "source_url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPSDJ6MnZWMS1WVmZleXE2bHFrS0NzczJ4ajVXQl9KQ0Y1X2xvZnYydEtFajBkZ2VRbzlTa01CSWxCbExNV1pNODhWTzhzdllsTFdRWWtzV2FsdU1uM0hObjJXZkRGSmZ1djJFZWlpZHlBQnZGdWNuRWZPeld2YVlJYzNJQWxhSlk3T0V2UXVTUXBfcUJHZFNKekFyYTYwbndlcFBvR1JIMnpudjlhWjJLVC1GZGE0a0hUNno4ZjQ5Qlp1LXRXTjk2SkgwRTV1YzB1cFhyRFM1V0hRN1ZNWnpF?oc=5",
+        "source_title": "Deloitte",
+        "source_type": "news",
+        "published": "2026-03-31",
+        "confidence": "high",
+        "entities": [],
+        "segment": "SEG-AGENTIC-OPS"
+      },
+      {
+        "claim": "Bosch has introduced \"Shopfloor Agent,\" an AI solution designed to enhance manufacturing processes by automating workflows and improving operational efficiency.",
+        "source_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE96Uk1pWHZ5Ry1wRzlscWNWRHhpLXpFN3RmVEk1V0h2RjJabVpuRWxCOXU3NHZ6WDVSQk0xcVRIcTdiX2NMOVhzam4xX0VFamR6MWxhOGdfUW5EVWQ4a2FpSW1yVFJPRG5LWHJIcWRpTDh4WGxN?oc=5",
+        "source_title": "Bosch Global",
+        "source_type": "news",
+        "published": "2026-04-16",
+        "confidence": "high",
+        "entities": [
+          "Bosch"
+        ],
+        "segment": "SEG-AGENTIC-OPS"
+      },
+      {
+        "claim": "The manufacturing industry is expected to increasingly adopt AI technologies, including agentic AI, to drive operational efficiencies and adapt to market changes.",
+        "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNaExYSjNBLW1OTXdrTXBMazNIdEp6LVFYSUl0aWt4cUY1dEIxVFN6Q1plNm5KWUd5eDJHbk9BSVpLX01FdktXMl9JOG4tVnVpU2dhX0ZxckVOOVdQejZXWk1FTXdvMko0cmJCTld4QmNHWDNyVjBqSU1vMkp0RFNIb05oWmVMTVNSRk1ra3F0bmc4TmtwcFoyUnl0X3lfTk9WbEdGU3BKRmxRSmlwaTJqRzRoZGozVmlZMnc?oc=5",
+        "source_title": "Deloitte",
+        "source_type": "news",
+        "published": "2025-11-12",
+        "confidence": "high",
+        "entities": [],
+        "segment": "SEG-AGENTIC-OPS"
+      },
+      {
+        "claim": "The integration of agentic AI is seen as crucial for the development of autonomous vehicles, which will significantly impact manufacturing logistics and operations.",
+        "source_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPdHVYRUp4d1lXQTZnaVQ5UG5HYUxrTjZVWFBiQVp3d3dLdWFJSFNnb25hSEVRaVZXeFZERGhXeTc4VFpZY3JaYW5Gc29ZV1EtNFFFN2JkVk5wZTR5MmVJTnQxN05XWDg3Y1M3bVJGeWF0VGNyQ3V0XzRHd25zUzhxd1M4VlRTTnBsR0kwSkZDRExWQks0NHlVbjBraTFZRUczQUticmFCZHBzT3lUVERuNHN4SDhwNklYMWM3Z3hn?oc=5",
+        "source_title": "Tata Consultancy Services",
+        "source_type": "news",
+        "published": "2025-11-12",
+        "confidence": "high",
+        "entities": [
+          "Tata Consultancy Services"
+        ],
+        "segment": "SEG-AGENTIC-OPS"
+      }
+    ],
+    "incumbent_moves": [
+      {
+        "claim": "MVB Financial Corp is actively discussing AI-driven operational efficiency in their filings.",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1277902/000127790226000087/q32026cashdividendpressrel.htm",
+        "source_title": "MVB Financial Corp SEC Filing",
+        "source_type": "regulatory_filing",
+        "published": "2026-08-19",
+        "confidence": "medium",
+        "entities": [
+          "MVB Financial Corp"
+        ],
+        "segment": "SEG-AGENTIC-OPS"
+      },
+      {
+        "claim": "International Business Machines Corp (IBM) is also discussing AI-driven operational efficiency in their filings, suggesting they are leveraging AI for operational improvements.",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/51143/000005114325000063/ibm_ex991.htm",
+        "source_title": "IBM SEC Filing",
+        "source_type": "regulatory_filing",
+        "published": "2025-10-23",
+        "confidence": "medium",
+        "entities": [
+          "International Business Machines Corp"
+        ],
+        "segment": "SEG-AGENTIC-OPS"
+      },
+      {
+        "claim": "IBM's annual report indicates a commitment to AI-driven operational efficiency, showcasing their strategic direction in this domain.",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/51143/000005114326000027/ibmars2025.pdf",
+        "source_title": "IBM Annual Report",
+        "source_type": "regulatory_filing",
+        "published": "2026-03-10",
+        "confidence": "medium",
+        "entities": [
+          "International Business Machines Corp"
+        ],
+        "segment": "SEG-AGENTIC-OPS"
+      },
+      {
+        "claim": "Primech Holdings Ltd has made announcements regarding their focus on AI and operational efficiency, indicating their entry into the market.",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1891944/000121390025097799/ea026078901ex99-1_primech.htm",
+        "source_title": "Primech Holdings SEC Filing",
+        "source_type": "regulatory_filing",
+        "published": "2025-10-09",
+        "confidence": "medium",
+        "entities": [
+          "Primech Holdings Ltd"
+        ],
+        "segment": "SEG-AGENTIC-OPS"
+      },
+      {
+        "claim": "Perion Network Ltd. has also filed reports discussing AI integration, which may relate to operational efficiencies in manufacturing.",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1338940/000117891",
+        "source_title": "Perion Network SEC Filing",
+        "source_type": "regulatory_filing",
+        "published": "2026-03-16",
+        "confidence": "medium",
+        "entities": [
+          "Perion Network Ltd."
+        ],
+        "segment": "SEG-AGENTIC-OPS"
+      }
+    ],
+    "new_entrants": [],
+    "capital_flows": [
+      {
+        "claim": "Donna raised $4.8 million to enhance its agentic AI assistant for field sales teams, indicating funding activity in the agentic AI space.",
+        "source_url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE0zV2sxM21keUtaZWRBYkpURzZYSTI5aEFNSEVzTU40cWVaUVp6eEI0RmlvaVhaWVZJWGU1Vi1HUW9Ja3NkckVLZWlNXzZJMXJZVE8xWUVCQjXSAV5BVV95cUxQSnJyU2xCcDRrc084YWlmSkw2YmJnSTB6NGxJSTBxZXNHSnlOYkU4ajhyNmw4ZWxRNWgtbk05aHk4TE00czNiX0llMDZzY3BBR3JxcWdzQ3RxWVM2SDNB?oc=5",
+        "source_title": "pulse2.com",
+        "source_type": "news",
+        "published": "2025-12-11",
+        "confidence": "medium",
+        "entities": [
+          "Donna"
+        ],
+        "segment": "SEG-AGENTIC-OPS"
+      },
+      {
+        "claim": "The \"Shopfloor Agent\" initiative by Bosch aims to integrate AI into manufacturing processes, showcasing advancements in agentic AI applications.",
+        "source_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE96Uk1pWHZ5Ry1wRzlscWNWRHhpLXpFN3RmVEk1V0h2RjJabVpuRWxCOXU3NHZ6WDVSQk0xcVRIcTdiX2NMOVhzam4xX0VFamR6MWxhOGdfUW5EVWQ4a2FpSW1yVFJPRG5LWHJIcWRpTDh4WGxN?oc=5",
+        "source_title": "Bosch Global",
+        "source_type": "news",
+        "published": "2026-04-16",
+        "confidence": "medium",
+        "entities": [
+          "Bosch"
+        ],
+        "segment": "SEG-AGENTIC-OPS"
+      },
+      {
+        "claim": "IBM is actively discussing AI-driven operational efficiency in its recent filings, indicating a strategic focus on integrating AI into operations.",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/51143/000005114325000063/ibm_ex991.htm",
+        "source_title": "SEC Filing",
+        "source_type": "regulatory_filing",
+        "published": "2025-10-23",
+        "confidence": "medium",
+        "entities": [
+          "IBM"
+        ],
+        "segment": "SEG-AGENTIC-OPS"
+      }
+    ],
+    "summary": "The market for agentic AI in industrial manufacturing is poised for significant transformation by 2026, with major players like Bosch and IBM leading advancements in operational efficiency and supply chain resilience. Despite a lack of new entrants, existing companies are actively investing in AI technologies, with notable funding activities such as Donna's $4.8 million raise. Meridian should consider building its capabilities through partnerships or acquisitions, focusing on operational efficiencies and AI-driven decision-making to stay competitive.",
+    "sources_unavailable": [
+      "No new entrants identified in regulatory filings or developer community discussions.",
+      "No strategic partnerships found in current searches."
+    ]
+  },
+  "internal": {
+    "position_summary": "Meridian Industrial Group's internal position in the segments relevant to Agentic AI and autonomous operations in industrial manufacturing reveals significant disparities between self-assessed capabilities and commercial outcomes. The strongest segment is 'SEG-PREDICTIVE-MAINT' with a high win rate and substantial ARR won, while the weakest is 'SEG-FLEET-AUTONOMY' with no wins and significant ARR lost. The analysis suggests strategic realignment in certain segments, particularly where internal capabilities do not match market demands.",
+    "findings": [
+      {
+        "claim": "No deals won, with $6,869,000 ARR lost and a 0% win rate.",
+        "citation_tags": [
+          "D-2201",
+          "D-2204",
+          "D-2207",
+          "D-2211",
+          "D-2214",
+          "D-2217",
+          "D-2222",
+          "D-2230",
+          "D-2233",
+          "D-2239",
+          "CAP-02"
+        ],
+        "metric": "$6,869,000",
+        "segment": "SEG-FLEET-AUTONOMY",
+        "implication": "Internal capability rated at 2/5, indicating a lack of readiness."
+      },
+      {
+        "claim": "9 deals won, $4,665,000 ARR won, with a 90% win rate.",
+        "citation_tags": [
+          "D-2227",
+          "D-2202",
+          "D-2206",
+          "D-2210",
+          "D-2216",
+          "D-2220",
+          "D-2223",
+          "D-2234",
+          "D-2238",
+          "D-2241",
+          "CAP-01"
+        ],
+        "metric": "$4,665,000",
+        "segment": "SEG-PREDICTIVE-MAINT",
+        "implication": "Internal capability rated at 4/5, indicating strong market alignment."
+      },
+      {
+        "claim": "1 deal won, 4 lost, $2,945,000 ARR lost, with a 20% win rate.",
+        "citation_tags": [
+          "D-2205",
+          "D-2212",
+          "D-2219",
+          "D-2235",
+          "D-2226",
+          "CAP-04"
+        ],
+        "metric": "$2,945,000",
+        "segment": "SEG-INDUSTRIAL-DATA",
+        "implication": "Internal capability rated at 2/5, with significant integration challenges."
+      },
+      {
+        "claim": "$13,172,000 ARR lost to competitors we also pay as suppliers, with $3,617,000 annual spend to these competitors.",
+        "citation_tags": [
+          "D-2201",
+          "D-2204",
+          "D-2211",
+          "D-2217",
+          "D-2222",
+          "D-2239",
+          "D-2205",
+          "D-2212",
+          "D-2235",
+          "D-2207",
+          "D-2230",
+          "D-2224",
+          "D-2231",
+          "D-2227",
+          "D-2214",
+          "D-2233",
+          "D-2215",
+          "D-2237",
+          "D-2208",
+          "D-2221",
+          "D-2219",
+          "D-2229"
+        ],
+        "metric": "$13,172,000",
+        "segment": "Competitor and Supplier Overlap",
+        "implication": "Conflicts exist where spend aligns with segments where competitors beat us."
+      },
+      {
+        "claim": "2 deals won, 4 lost, $928,000 ARR lost, with a 33% win rate.",
+        "citation_tags": [
+          "D-2208",
+          "D-2215",
+          "D-2221",
+          "D-2237",
+          "D-2228",
+          "D-2240",
+          "CAP-05"
+        ],
+        "metric": "$928,000",
+        "segment": "SEG-AGENTIC-OPS",
+        "implication": "Internal capability rated at 1/5, indicating a need for strategic development."
+      },
+      {
+        "claim": "High renewal risk for key suppliers in segments where we face competitive challenges.",
+        "citation_tags": [
+          "V-123",
+          "V-121",
+          "V-112",
+          "V-117",
+          "V-115",
+          "V-108",
+          "V-119",
+          "V-105",
+          "V-106",
+          "V-101"
+        ],
+        "metric": "",
+        "segment": "Upcoming Supplier Renewals",
+        "implication": "Opportunity to renegotiate terms or seek alternative suppliers."
+      }
+    ],
+    "strongest_segments": [
+      "SEG-PREDICTIVE-MAINT"
+    ],
+    "weakest_segments": [
+      "SEG-FLEET-AUTONOMY"
+    ],
+    "adopted_positions": [
+      {
+        "claim": "Industrial AI adoption will remain concentrated in single-asset use cases through the end of the decade. Meridian's leading position in predictive maintenance and vision inspection covers the segments where budget actually exists.",
+        "citation_tags": [
+          "PRIOR-01"
+        ],
+        "metric": "",
+        "segment": "",
+        "implication": ""
+      },
+      {
+        "claim": "Coordinating fleets of heterogeneous machines is an unsolved research problem and, more importantly, an unbudgeted one. Plant managers hold cell-level budgets. We assess a fleet-level buying centre as a 2030-plus development and recommend no capability investment in this planning cycle.",
+        "citation_tags": [
+          "PRIOR-02"
+        ],
+        "metric": "",
+        "segment": "",
+        "implication": ""
+      },
+      {
+        "claim": "Reviewed and passed. Technically credible, commercially premature. We expect this company to struggle to raise a subsequent round without a named production customer.",
+        "citation_tags": [
+          "PRIOR-03"
+        ],
+        "metric": "",
+        "segment": "",
+        "implication": ""
+      },
+      {
+        "claim": "Demonstrations are impressive and irrelevant to industrial buyers, who require determinism and certifiability. We see no path to a production deployment in a regulated manufacturing environment within the planning horizon.",
+        "citation_tags": [
+          "PRIOR-04"
+        ],
+        "metric": "",
+        "segment": "",
+        "implication": ""
+      },
+      {
+        "claim": "A category in search of a problem. Plant operators do not want a chat interface, they want fewer alarms. We recommend no action.",
+        "citation_tags": [
+          "PRIOR-05"
+        ],
+        "metric": "",
+        "segment": "",
+        "implication": ""
+      },
+      {
+        "claim": "Our commissioning organisation is not replicable by software-first entrants and remains the group's most reliable competitive moat in automation.",
+        "citation_tags": [
+          "PRIOR-06"
+        ],
+        "metric": "",
+        "segment": "",
+        "implication": ""
+      },
+      {
+        "claim": "Software attach rate is the primary group objective. Motion control hardware remains the profit engine but is commoditising. The board has set a target of software and recurring revenue reaching 25% of group revenue, from 9% today. Any recommendation that does not move software attach rate is a distraction.",
+        "citation_tags": [
+          "STRAT-01"
+        ],
+        "metric": "",
+        "segment": "",
+        "implication": ""
+      },
+      {
+        "claim": "Defend the integration moat, but stop selling it as the product. 1,400 commissioning engineers are the most common stated reason customers choose Meridian. That advantage scales with headcount and therefore cannot carry the software target. Integration should become the channel for software, not the thing on the invoice.",
+        "citation_tags": [
+          "STRAT-02"
+        ],
+        "metric": "",
+        "segment": "",
+        "implication": ""
+      },
+      {
+        "claim": "Own at least one control point per served segment. The group's recurring weakness is occupying the layer above the hardware and below the customer's own systems, while someone else owns the layer that actually determines switching cost. Where Meridian does not own a control point, it should either build one, buy one, or exit the segment deliberately rather than by attrition.",
+        "citation_tags": [
+          "STRAT-03"
+        ],
+        "metric": "",
+        "segment": "",
+        "implication": ""
+      },
+      {
+        "claim": "Ventures exists to buy time, not returns. Meridian Ventures is mandated to take positions that shorten the group's time to a capability it has decided it needs. Financial return is a secondary measure. A pass on a target the group later has to build from scratch is a worse outcome than an expensive entry.",
+        "citation_tags": [
+          "STRAT-04"
+        ],
+        "metric": "",
+        "segment": "",
+        "implication": ""
+      },
+      {
+        "claim": "No new single-vendor dependencies. Following the FY25 audit finding on the control platform, any recommendation creating a new dependency on a single external supplier for a strategic layer requires board-level approval.",
+        "citation_tags": [
+          "STRAT-05"
+        ],
+        "metric": "",
+        "segment": "",
+        "implication": ""
+      },
+      {
+        "claim": "Capital discipline. Cheque sizes of $5-25M for minority positions. Anything requiring more than $25M must be presented as an acquisition case with a named integrating BU and a named executive sponsor.",
+        "citation_tags": [
+          "STRAT-06"
+        ],
+        "metric": "",
+        "segment": "",
+        "implication": ""
+      }
+    ]
+  },
+  "adopted_position_test": {
+    "contradicted": [
+      "Industrial AI adoption will remain concentrated in single-asset use cases through the end of the decade. Meridian's leading position in predictive maintenance and vision inspection covers the segments where budget actually exists. [PRIOR-01] This is contradicted by external evidence showing significant transformation in industrial manufacturing through agentic AI by 2026, enhancing operational efficiency and decision-making processes. [https://news.google.com/rss/articles/CBMirAFBVV95cUxQN1FRcTZaNDF2Z0VObGNXR1YzTFBYQnBYOWdiQXRzUnJTTmk0bWJMV2dNZGRnNkFiMHBYSDRHM3lZM3M4c01GRTYzclBtSWFFckROOHY4RkQtbzE2OWhWcUZlaGY1SzNJdTZFanVEdWpzbWFSREtsZklEMDBUcUd1UFZKcDBraERWMXV2TXFxd0tSSXczU2dIU003UXNmN0R5eWItOUs4cG5MalFW?oc=5]"
+    ],
+    "upheld": [
+      "Coordinating fleets of heterogeneous machines is an unsolved research problem and, more importantly, an unbudgeted one. Plant managers hold cell-level budgets. We assess a fleet-level buying centre as a 2030-plus development and recommend no capability investment in this planning cycle. [PRIOR-02]",
+      "Reviewed and passed. Technically credible, commercially premature. We expect this company to struggle to raise a subsequent round without a named production customer. [PRIOR-03]",
+      "Demonstrations are impressive and irrelevant to industrial buyers, who require determinism and certifiability. We see no path to a production deployment in a regulated manufacturing environment within the planning horizon. [PRIOR-04]",
+      "A category in search of a problem. Plant operators do not want a chat interface, they want fewer alarms. We recommend no action. [PRIOR-05]",
+      "Our commissioning organisation is not replicable by software-first entrants and remains the group's most reliable competitive moat in automation. [PRIOR-06]",
+      "Software attach rate is the primary group objective. Motion control hardware remains the profit engine but is commoditising. The board has set a target of software and recurring revenue reaching 25% of group revenue, from 9% today. Any recommendation that does not move software attach rate is a distraction. [STRAT-01]",
+      "Defend the integration moat, but stop selling it as the product. 1,400 commissioning engineers are the most common stated reason customers choose Meridian. That advantage scales with headcount and therefore cannot carry the software target. Integration should become the channel for software, not the thing on the invoice. [STRAT-02]",
+      "Own at least one control point per served segment. The group's recurring weakness is occupying the layer above the hardware and below the customer's own systems, while someone else owns the layer that actually determines switching cost. Where Meridian does not own a control point, it should either build one, buy one, or exit the segment deliberately rather than by attrition. [STRAT-03]",
+      "Ventures exists to buy time, not returns. Meridian Ventures is mandated to take positions that shorten the group's time to a capability it has decided it needs. Financial return is a secondary measure. A pass on a target the group later has to build from scratch is a worse outcome than an expensive entry. [STRAT-04]",
+      "No new single-vendor dependencies. Following the FY25 audit finding on the control platform, any recommendation creating a new dependency on a single external supplier for a strategic layer requires board-level approval. [STRAT-05]",
+      "Capital discipline. Cheque sizes of $5-25M for minority positions. Anything requiring more than $25M must be presented as an acquisition case with a named integrating BU and a named executive sponsor. [STRAT-06]"
+    ],
+    "untestable": []
+  },
+  "audit": {
+    "passed": true,
+    "unresolved_identifiers": [],
+    "revisions": 1,
+    "notes": "",
+    "reviewer_verdict": {
+      "passed": true,
+      "unsupported_claims": [],
+      "miscited_claims": [],
+      "notes": ""
+    }
+  },
+  "fusion": {
+    "signals": [
+      {
+        "headline": "Meridian's strategic position on industrial AI adoption is contradicted by external evidence.",
+        "segment": "Industrial AI",
+        "entities": [
+          "Meridian"
+        ],
+        "external_evidence": [
+          {
+            "claim": "The year 2026 is projected to be pivotal for the transformation of industrial manufacturing through agentic AI, enhancing operational efficiency and decision-making processes.",
+            "source_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQN1FRcTZaNDF2Z0VObGNXR1YzTFBYQnBYOWdiQXRzUnJTTmk0bWJMV2dNZGRnNkFiMHBYSDRHM3lZM3M4c01GRTYzclBtSWFFckROOHY4RkQtbzE2OWhWcUZlaGY1SzNJdTZFanVEdWpzbWFSREtsZklEMDBUcUd1UFZKcDBraERWMXV2TXFxd0tSSXczU2dIU003UXNmN0R5eWItOUs4cG5MalFW?oc=5",
+            "source_title": "Manufacturing Dive",
+            "source_type": "news",
+            "published": "",
+            "confidence": "high",
+            "entities": [],
+            "segment": "Industrial AI"
+          }
+        ],
+        "internal_evidence": [
+          {
+            "claim": "Industrial AI adoption will remain concentrated in single-asset use cases through the end of the decade. Meridian's leading position in predictive maintenance and vision inspection covers the segments where budget actually exists.",
+            "citation_tags": [
+              "PRIOR-01"
+            ],
+            "metric": "",
+            "segment": "Industrial AI",
+            "implication": "Meridian should reevaluate its strategic focus and consider expanding its capabilities in agentic AI to remain competitive."
+          }
+        ],
+        "why_this_needs_both": "The external evidence suggests a broader and faster adoption of agentic AI than Meridian's current strategic position anticipates, indicating a need for strategic realignment.",
+        "implication": "Meridian should reevaluate its strategic focus and consider expanding its capabilities in agentic AI to remain competitive.",
+        "urgency": "act_now",
+        "confidence": "high"
+      },
+      {
+        "headline": "Meridian is losing significant revenue in the fleet autonomy segment to competitors who are also its suppliers.",
+        "segment": "Fleet Autonomy",
+        "entities": [
+          "Meridian",
+          "Nexara Robotics"
+        ],
+        "external_evidence": [
+          {
+            "claim": "The concept of an agentic supply chain is gaining traction, emphasizing resilience through AI-driven decision-making and automation in manufacturing processes.",
+            "source_url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPSDJ6MnZWMS1WVmZleXE2bHFrS0NzczJ4ajVXQl9KQ0Y1X2xvZnYydEtFajBkZ2VRbzlTa01CSWxCbExNV1pNODhWTzhzdllsTFdRWWtzV2FsdU1uM0hObjJXZkRGSmZ1djJFZWlpZHlBQnZGdWNuRWZPeld2YVlJYzNJQWxhSlk3T0V2UXVTUXBfcUJHZFNKekFyYTYwbndlcFBvR1JIMnpudjlhWjJLVC1GZGE0a0hUNno4ZjQ5Qlp1LXRXTjk2SkgwRTV1YzB1cFhyRFM1V0hRN1ZNWnpF?oc=5",
+            "source_title": "Deloitte",
+            "source_type": "news",
+            "published": "",
+            "confidence": "high",
+            "entities": [],
+            "segment": "Fleet Autonomy"
+          }
+        ],
+        "internal_evidence": [
+          {
+            "claim": "Meridian lost $6,869,000 in ARR in the SEG-FLEET-AUTONOMY segment, with Nexara Robotics being a top competitor and also a supplier.",
+            "citation_tags": [
+              "D-2201",
+              "D-2204",
+              "D-2211",
+              "D-2217",
+              "D-2222",
+              "D-2239",
+              "V-102"
+            ],
+            "metric": "$6,869,000",
+            "segment": "Fleet Autonomy",
+            "implication": "Meridian should reassess its supplier relationships in the fleet autonomy segment and consider alternative suppliers or strategic partnerships to mitigate this conflict."
+          }
+        ],
+        "why_this_needs_both": "The external evidence highlights the growing importance of AI-driven supply chains, while the internal evidence shows a direct conflict where Meridian's suppliers are also its competitors, exacerbating the strategic risk.",
+        "implication": "Meridian should reassess its supplier relationships in the fleet autonomy segment and consider alternative suppliers or strategic partnerships to mitigate this conflict.",
+        "urgency": "act_now",
+        "confidence": "high"
+      },
+      {
+        "headline": "The segment attracting the most outside capital, agentic operations, is where Meridian rates its own capability weakest.",
+        "segment": "Agentic Operations",
+        "entities": [
+          "Meridian"
+        ],
+        "external_evidence": [
+          {
+            "claim": "Bosch has introduced 'Shopfloor Agent,' an AI solution designed to enhance manufacturing processes by automating workflows and improving operational efficiency.",
+            "source_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE96Uk1pWHZ5Ry1wRzlscWNWRHhpLXpFN3RmVEk1V0h2RjJabVpuRWxCOXU3NHZ6WDVSQk0xcVRIcTdiX2NMOVhzam4xX0VFamR6MWxhOGdfUW5EVWQ4a2FpSW1yVFJPRG5LWHJIcWRpTDh4WGxN?oc=5",
+            "source_title": "Bosch Global",
+            "source_type": "news",
+            "published": "",
+            "confidence": "medium",
+            "entities": [],
+            "segment": "Agentic Operations"
+          }
+        ],
+        "internal_evidence": [
+          {
+            "claim": "Meridian's internal capability in SEG-AGENTIC-OPS is rated at 1/5, with $928,000 ARR lost and a 33% win rate.",
+            "citation_tags": [
+              "D-2208",
+              "D-2215",
+              "D-2221",
+              "D-2237",
+              "D-2228",
+              "D-2240",
+              "CAP-05"
+            ],
+            "metric": "1/5",
+            "segment": "Agentic Operations",
+            "implication": "Meridian should consider strategic investments or partnerships to enhance its capabilities in agentic operations to capture emerging market opportunities."
+          }
+        ],
+        "why_this_needs_both": "The external evidence shows significant investment and development in agentic operations, while the internal evidence reveals Meridian's weak position, highlighting a critical gap that needs addressing.",
+        "implication": "Meridian should consider strategic investments or partnerships to enhance its capabilities in agentic operations to capture emerging market opportunities.",
+        "urgency": "decide_this_quarter",
+        "confidence": "medium"
+      }
+    ],
+    "contradictions": [
+      "Meridian's strategic position that industrial AI adoption will remain concentrated in single-asset use cases through the end of the decade is contradicted by external evidence indicating significant transformation in industrial manufacturing through agentic AI by 2026. [PRIOR-01]",
+      "Industrial AI adoption will remain concentrated in single-asset use cases through the end of the decade. Meridian's leading position in predictive maintenance and vision inspection covers the segments where budget actually exists. [PRIOR-01] This is contradicted by external evidence showing significant transformation in industrial manufacturing through agentic AI by 2026, enhancing operational efficiency and decision-making processes. [https://news.google.com/rss/articles/CBMirAFBVV95cUxQN1FRcTZaNDF2Z0VObGNXR1YzTFBYQnBYOWdiQXRzUnJTTmk0bWJMV2dNZGRnNkFiMHBYSDRHM3lZM3M4c01GRTYzclBtSWFFckROOHY4RkQtbzE2OWhWcUZlaGY1SzNJdTZFanVEdWpzbWFSREtsZklEMDBUcUd1UFZKcDBraERWMXV2TXFxd0tSSXczU2dIU003UXNmN0R5eWItOUs4cG5MalFW?oc=5]"
+    ],
+    "gaps": [
+      "The size of the most recent financing round for a named company could not be verified from a primary source.",
+      "Details on the security review of departmental tools used in agentic operations were not available, indicating a potential gap in compliance and risk management."
+    ],
+    "rejected": []
+  }
+}

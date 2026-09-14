@@ -1,0 +1,148 @@
+draft_memo:
+  description: >
+    Write the executive memo on {topic} for {customer}.
+
+    CROSS-SIGNAL FINDINGS -- these are the spine of the memo
+    {fusion}
+
+    EXTERNAL FINDINGS
+    {external}
+
+    INTERNAL ASSESSMENT
+    {internal}
+
+    REVISION INSTRUCTIONS, if any. If this section is not empty, a previous
+    draft was rejected by the auditor. Fix exactly these problems and change
+    nothing else.
+    {audit_notes}
+
+    Fill every field of the memo structure. Requirements:
+
+    - executive_summary: exactly five bullets. Each must be a conclusion with a
+      figure or a named consequence. No bullet may be a topic heading.
+    - bottom_line: one paragraph that answers the question. If someone reads
+      only this, they should know what to do and why.
+    - recommendation: one of build, partner, buy, hybrid, exit, no_action, with
+      a rationale tied to the strategic priorities in the internal records.
+    - whats_changing, how_leaders_are_innovating, new_entrants,
+      where_capital_is_flowing: markdown prose. Use markdown tables where you
+      are presenting more than three comparable items. Every external claim
+      carries its source URL as a markdown link.
+    - implications_for_customer: what this means for this specific company,
+      referencing its own segments, capabilities and commitments by record
+      identifier.
+    - risks_and_unknowns: required, and it must be substantive. State the
+      contradictions, the gaps, and what evidence would change the
+      recommendation. Do not use this section to hedge the recommendation you
+      just made; use it to say what you do not know.
+    - actions: three to six actions across the 30, 60 and 90 day horizons. Each
+      needs an owner. Prefer owners named in the internal records.
+
+    Citation rules, which are not optional:
+    - Every claim about the company's own position carries its record
+      identifier in square brackets, for example [CRM-DEAL D-2201],
+      [VENDOR V-102], [CAP CAP-02], [WATCHLIST T-01], [WL-01], [STRAT-03],
+      [PRIOR-02].
+    - Every external claim carries its source URL.
+    - Never write an identifier you have not seen in the evidence given to you.
+      A fabricated identifier will fail the audit and waste a revision.
+    - USE THE CITATION GUIDE BELOW. For every claim about the company's own
+      position, find the matching entry in the guide and copy its CITE EXACTLY
+      string verbatim, including every identifier in it. Do not shorten the
+      list, do not add to it, do not merge two entries, and do not retype the
+      identifiers from anywhere else. The guide is computed from the records
+      themselves, so a citation copied from it is correct by construction and
+      one assembled by hand is not.
+
+    CITATION GUIDE
+    {citation_guide}
+
+    - AGGREGATE FIGURES MUST CARRY THE WHOLE RECORD SET THAT PRODUCED THEM.
+      A win rate, a segment total, a count of deals and an annual spend total
+      are computed across many records, so they must cite all of the record
+      identifiers the internal evidence lists for that figure -- not one
+      example from the set. Citing a single deal for a segment total is a
+      miscitation even though the identifier is real, because that one record
+      does not contain the figure. It will be caught and it will cost a
+      revision.
+    - Cite a single record only for a claim that the single record actually
+      contains -- one deal's value, one contract's end date, one quoted
+      sentence from an interview.
+    - Never attach an identifier to a sentence the record contradicts. If the
+      internal evidence says a segment has a 90% win rate, do not support that
+      sentence with a lost deal's identifier.
+
+    Today's date is {today}.
+  expected_output: >
+    A complete executive memo with every field populated, citations on every
+    claim, and a substantive risks and unknowns section.
+  agent: memo_writer
+
+audit_memo:
+  description: >
+    Audit the draft memo before it reaches the executive.
+
+    Check every claim in the draft against the evidence that was available:
+
+    EXTERNAL FINDINGS
+    {external}
+
+    INTERNAL ASSESSMENT
+    {internal}
+
+    Work through these checks:
+
+    1. Every claim about the company's own position must carry a record
+       identifier. Resolve each one with the record lookup tool. Do not judge
+       from memory -- look it up.
+    2. For each identifier that resolves, confirm the record actually supports
+       the sentence citing it. A real identifier attached to a claim it does
+       not support is the most dangerous failure, because it looks verified.
+    3. FIGURES ARE NOT YOUR JOB, AND CHECKING THEM AGAIN CAN ONLY DO HARM.
+       Before this draft reached you, every figure was totalled against the
+       records cited for it, in code, over the complete source files. That
+       check is exact and it has already run. So do not add numbers up, do not
+       compare a figure with a total, and never report a claim as miscited
+       because of its arithmetic.
+
+       This instruction exists because the opposite was tried. Asked to verify
+       figures, this step returned "the total loss is $6,869,000, not
+       $6,869,000" -- comparing a number with itself and failing a correct
+       draft on the difference. A check that fires at random is worse than no
+       check, because the real findings reported alongside it stop being
+       believed.
+
+       What IS yours is whether a record supports the SENTENCE: whether the
+       thing claimed about the company is the thing the record says. A lost
+       deal cited to support a claim about winning is a real miscitation, and
+       no amount of arithmetic would catch it.
+    4. Records with no monetary amount -- CAP-, T-, WL-, STRAT-, PRIOR- -- are
+       legitimate citations alongside deal records and are never an error.
+       Neither is a long list of identifiers: an aggregate claim is supposed to
+       cite every record behind it.
+    5. Every external claim must carry a source URL.
+    6. The risks and unknowns section must be substantive rather than a hedge.
+
+    YOU ARE THE VERIFICATION STEP. You may not discharge a check by asking for
+    one. If a tool confirms a figure matches the records cited for it, that
+    claim is CORRECT: do not list it as miscited, and do not append a caveat
+    asking someone to "verify", "ensure", "double-check" or "confirm" it.
+    There is nobody after you to do that, and a draft failed without a named
+    defect costs a revision and buys nothing.
+
+    Fail the draft only when you can state the specific error: which sentence,
+    which identifier, and what the record actually says instead. A note you
+    cannot write in that form is not a finding, and the correct verdict for it
+    is passed.
+
+    Set passed to false if you find any unsupported claim, any miscited claim,
+    or any figure that does not match its record. When you fail the draft, put
+    specific, actionable instructions in notes: name the sentence and say what
+    is wrong with it. Set passed to true only if the draft is publishable as it
+    stands.
+  expected_output: >
+    An audit verdict with a pass or fail decision, the list of unsupported
+    claims, the list of miscited claims, and specific revision instructions.
+  agent: citation_auditor
+  context:
+    - draft_memo

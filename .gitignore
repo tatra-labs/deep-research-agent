@@ -1,0 +1,33 @@
+# Planning scratch (internal, not part of the deliverable)
+_plan/
+docs/
+deck/
+
+# Secrets
+.env
+.env.local
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+
+# CrewAI local state (memory / knowledge vector stores are machine-local)
+.crewai/
+db/
+*.pkl
+
+# Run artifacts (a curated sample lives in sample_output/ and IS committed)
+output/
+
+# NOTE: .cache/ is deliberately COMMITTED. http.sqlite holds primary-source API
+# responses and search_results.json holds recorded search result sets; together
+# they let this repository be reproduced with no search credentials and no
+# spend. Article bodies are pruned out before committing — they are most of the
+# size, and scraped pages carry third-party secrets.
+# Run `uv run python scripts/warm_cache.py --prune` before committing a cache
+# that has grown. 

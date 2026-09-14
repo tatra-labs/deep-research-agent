@@ -1,0 +1,139 @@
+{
+  "fund": "Meridian Ventures",
+  "mandate": "Minority positions in industrial software and automation adjacent to a Meridian business unit. Cheque size $5-25M. Strategic value weighted above financial return.",
+  "scoring": "0-100 composite: market pull 30, technology defensibility 30, strategic fit to a Meridian BU 25, team 15. Threshold to advance to diligence is 70.",
+  "targets": [
+    {
+      "target_id": "T-01",
+      "company": "Nexara Robotics",
+      "segment_tag": "SEG-FLEET-AUTONOMY",
+      "last_reviewed": "2025-Q1",
+      "prior_score": 62,
+      "status": "Pass",
+      "reviewer": "Meridian Ventures — industrial software team",
+      "thesis_at_review": "Multi-robot orchestration is technically credible but the buyer does not exist yet. Plant managers buy cells, not fleets. Revisit if a fleet-level buying centre emerges.",
+      "pass_rationale": "Market pull scored 11/30. No evidence of budget above the cell level."
+    },
+    {
+      "target_id": "T-02",
+      "company": "Volta Sentinel",
+      "segment_tag": "SEG-PREDICTIVE-MAINT",
+      "last_reviewed": "2026-Q1",
+      "prior_score": 74,
+      "status": "Diligence",
+      "reviewer": "Meridian Ventures — industrial software team",
+      "thesis_at_review": "Sensor economics are strong and they already supply Energy Systems. Consolidation candidate.",
+      "pass_rationale": null
+    },
+    {
+      "target_id": "T-03",
+      "company": "Sable Lattice",
+      "segment_tag": "SEG-INDUSTRIAL-DATA",
+      "last_reviewed": "2026-Q2",
+      "prior_score": 71,
+      "status": "Monitor",
+      "reviewer": "Meridian Ventures — industrial software team",
+      "thesis_at_review": "Data fabric is the control point we do not own. They beat us at Rhine and Gulf Coast. Either a partner or a threat, not neutral.",
+      "pass_rationale": null
+    },
+    {
+      "target_id": "T-04",
+      "company": "Ferrous Mind",
+      "segment_tag": "SEG-PHYSICAL-AI",
+      "last_reviewed": "2025-Q3",
+      "prior_score": 58,
+      "status": "Pass",
+      "reviewer": "Meridian Ventures — industrial software team",
+      "thesis_at_review": "Foundation models for manipulation are a research bet with no near-term industrial revenue. Capital intensity far exceeds our cheque size.",
+      "pass_rationale": "Strategic fit scored 9/25. No Meridian BU could absorb it at the time of review."
+    },
+    {
+      "target_id": "T-05",
+      "company": "Halcyon Autonomy",
+      "segment_tag": "SEG-FLEET-AUTONOMY",
+      "last_reviewed": "2025-Q4",
+      "prior_score": 66,
+      "status": "Monitor",
+      "reviewer": "Meridian Ventures — industrial software team",
+      "thesis_at_review": "Same segment as Nexara, weaker team, better commercial motion. Watch which of the two wins the integrator channel.",
+      "pass_rationale": null
+    },
+    {
+      "target_id": "T-06",
+      "company": "Praxis Loop",
+      "segment_tag": "SEG-AGENTIC-OPS",
+      "last_reviewed": "2026-Q1",
+      "prior_score": 69,
+      "status": "Monitor",
+      "reviewer": "Meridian Ventures — industrial software team",
+      "thesis_at_review": "Just below threshold. Agentic operations tooling is early but the wedge into plant workflows is real.",
+      "pass_rationale": null
+    },
+    {
+      "target_id": "T-07",
+      "company": "Cindermill Systems",
+      "segment_tag": "SEG-PREDICTIVE-MAINT",
+      "last_reviewed": "2025-Q2",
+      "prior_score": 55,
+      "status": "Pass",
+      "reviewer": "Meridian Ventures — industrial software team",
+      "thesis_at_review": "Overlaps CAP-01 almost exactly. Buying them would duplicate a capability we already lead in.",
+      "pass_rationale": "Strategic fit scored 6/25 — cannibalisation risk."
+    },
+    {
+      "target_id": "T-08",
+      "company": "Argent Flow",
+      "segment_tag": "SEG-INDUSTRIAL-DATA",
+      "last_reviewed": "2026-Q2",
+      "prior_score": 64,
+      "status": "Monitor",
+      "reviewer": "Meridian Ventures — industrial software team",
+      "thesis_at_review": "Thin product, strong open-source community. Optionality play on the namespace standard.",
+      "pass_rationale": null
+    },
+    {
+      "target_id": "T-09",
+      "company": "Orbital Kiln",
+      "segment_tag": "SEG-VISION-QA",
+      "last_reviewed": "2025-Q4",
+      "prior_score": 52,
+      "status": "Pass",
+      "reviewer": "Meridian Ventures — industrial software team",
+      "thesis_at_review": "Hardware margins, already our supplier. Commercial relationship is sufficient.",
+      "pass_rationale": "Technology defensibility scored 8/30."
+    },
+    {
+      "target_id": "T-10",
+      "company": "Tessellate Ops",
+      "segment_tag": "SEG-AGENTIC-OPS",
+      "last_reviewed": "2026-Q2",
+      "prior_score": 61,
+      "status": "Monitor",
+      "reviewer": "Meridian Ventures — industrial software team",
+      "thesis_at_review": "Operations copilot with genuine end-user pull. Already inside our own perimeter without procurement approval, which is itself a signal.",
+      "pass_rationale": null
+    },
+    {
+      "target_id": "T-11",
+      "company": "Kestrel Torque",
+      "segment_tag": "SEG-FLEET-AUTONOMY",
+      "last_reviewed": "2025-Q3",
+      "prior_score": 49,
+      "status": "Pass",
+      "reviewer": "Meridian Ventures — industrial software team",
+      "thesis_at_review": "Firmware supplier attempting to move up-stack. Competent, not investable at our cheque size.",
+      "pass_rationale": "Market pull scored 12/30."
+    },
+    {
+      "target_id": "T-12",
+      "company": "Bright Anvil",
+      "segment_tag": "SEG-VISION-QA",
+      "last_reviewed": "2026-Q1",
+      "prior_score": 44,
+      "status": "Pass",
+      "reviewer": "Meridian Ventures — industrial software team",
+      "thesis_at_review": "We win against them consistently. No reason to own them.",
+      "pass_rationale": "Composite below threshold across all four dimensions."
+    }
+  ]
+}

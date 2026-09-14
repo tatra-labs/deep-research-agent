@@ -1,0 +1,87 @@
+analyse_position:
+  description: >
+    Establish this company's real position in the segments relevant to {topic},
+    using its own records.
+
+    Research brief to work from:
+    {brief}
+
+    You must use the analysis tools rather than estimating. Run all four:
+    analyse internal position by market segment; analyse why we lose deals;
+    analyse competitor and supplier overlap; list upcoming supplier renewals.
+
+    Then report findings. For each finding:
+    - State it as a conclusion, not a topic.
+    - Include the exact figure.
+    - List the record identifiers behind it in citation_tags, for example
+      D-2201 for a deal, V-102 for supplier spend, CAP-02 for a capability,
+      T-01 for an investment target.
+    - Take those identifiers from the list that matches what you are claiming.
+      The segment analysis returns records_for_wins, records_for_losses,
+      records_for_open_deals and records_for_capability_rating separately, for
+      exactly this reason. A claim about revenue won cites records_for_wins; a
+      claim about revenue lost cites records_for_losses; a claim about a
+      maturity rating cites records_for_capability_rating; a claim about a WIN
+      RATE cites records_for_win_rate, which includes the lost deals that form
+      the denominator.
+    - Do not combine a win rate and a revenue figure in one claim unless you
+      cite records_for_win_rate, which covers both. Two figures resting on
+      different record sets belong in two findings.
+    - An aggregate figure carries the WHOLE list behind it, not one example
+      from it. One deal identifier cannot support a segment total, and citing
+      it that way is a miscitation even though the identifier is real.
+    - Note the segment and the implication.
+
+    Prioritise findings where two different internal sources disagree with each
+    other, or where a self-assessed capability rating is inconsistent with the
+    commercial outcome in the same segment. Those are the findings an executive
+    has not already seen.
+
+    Name the strongest and weakest segments explicitly.
+  expected_output: >
+    An internal assessment with a position summary, a list of findings each
+    carrying exact figures and record identifiers, and named strongest and
+    weakest segments.
+  agent: position_analyst
+
+gather_internal_evidence:
+  description: >
+    Explain the numbers using the company's own documents, for {topic}.
+
+    Work from the position analysis you have been given.
+
+    Search the internal knowledge base for: what buyers said when the company
+    lost, the group's strategic priorities and investment mandate, and the last
+    formally adopted market view on this topic.
+
+    Your most important task: populate the adopted_positions field. Retrieve
+    the market view this company has formally adopted and record EVERY
+    substantive position in it -- each as one entry, quoting the position
+    verbatim in the claim and carrying its record identifier (PRIOR-01,
+    PRIOR-02 and so on), plus the strategic priorities that set the mandate
+    (STRAT-01 and so on).
+
+    Record these positions whether or not you think they are wrong. You are
+    not judging them here; you are stating what the company currently believes
+    so that the next stage can test each one against the outside world. A
+    position you leave out cannot be challenged later, so omitting one is the
+    most damaging thing you can do in this task.
+
+    Then, in your findings, identify where an adopted position is already
+    inconsistent with the company's own commercial results, setting the
+    verbatim position against the figure that contradicts it.
+
+    Every item you add must carry its record identifier, for example WL-01 for
+    a win/loss interview, STRAT-03 for a strategic priority, PRIOR-02 for the
+    prior adopted view. Verify any identifier you are unsure of using the
+    record lookup tool. Do not invent identifiers.
+
+    Return the complete assessment: the findings you were given, plus yours.
+  expected_output: >
+    The consolidated internal assessment: the findings you were given plus
+    yours, verbatim buyer statements with record identifiers, and a populated
+    adopted_positions list quoting every formally adopted market position with
+    its identifier.
+  agent: evidence_archivist
+  context:
+    - analyse_position

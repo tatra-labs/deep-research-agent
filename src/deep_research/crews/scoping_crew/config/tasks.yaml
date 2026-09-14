@@ -1,0 +1,34 @@
+scope_research:
+  description: >
+    Build the research brief for this topic: {topic}
+
+    The client is {customer}. Their internal records are tagged by market
+    segment using these identifiers, and you should reuse them verbatim where
+    they apply so that external findings can be joined to internal records:
+    SEG-FLEET-AUTONOMY (fleet-level autonomy orchestration),
+    SEG-PHYSICAL-AI (robot foundation models and physical AI),
+    SEG-PREDICTIVE-MAINT (predictive maintenance and asset performance),
+    SEG-INDUSTRIAL-DATA (industrial data infrastructure and unified namespace),
+    SEG-AGENTIC-OPS (agentic workflow automation for operations),
+    SEG-VISION-QA (vision-based quality inspection).
+
+    Do the following, in order:
+    1. State the single decision this report has to enable. Be specific about
+       what action becomes possible once it is answered.
+    2. Write four to seven sub-questions. Each must be answerable from evidence
+       and each must be one whose answer could change the decision. Discard any
+       question that is merely interesting.
+    3. List the segments in scope, using the identifiers above.
+    4. Write six to ten concrete search queries for the public web. Favour
+       queries that would surface financing activity, product launches and new
+       market entrants over queries that would surface definitions.
+    5. Write three to five quoted-phrase queries suitable for full-text search
+       over regulatory filings. These should be phrases a company would
+       actually write in a filing, not marketing language.
+
+    Today's date is {today}. Treat anything older than eighteen months as
+    background rather than as current signal.
+  expected_output: >
+    A research brief with the decision to support, sub-questions, segments in
+    scope, web search queries and filing queries.
+  agent: research_director

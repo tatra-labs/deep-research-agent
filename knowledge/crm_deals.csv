@@ -1,0 +1,49 @@
+deal_id,account,business_unit,region,segment_tag,arr_usd,stage,outcome,competitor,close_date,loss_reason_code
+D-2201,Midwest Auto Group,Motion Systems,NA,SEG-FLEET-AUTONOMY,480000,Closed,Lost,Nexara Robotics,2026-03-14,LR-AUTONOMY-ROADMAP
+D-2202,Baltic Steel Works,Process Automation,EMEA,SEG-PREDICTIVE-MAINT,310000,Closed,Won,Volta Sentinel,2026-01-22,
+D-2203,Cascadia Paper,Process Automation,NA,SEG-VISION-QA,225000,Closed,Won,Orbital Kiln,2025-11-05,
+D-2204,Kanto Precision,Motion Systems,APAC,SEG-FLEET-AUTONOMY,655000,Closed,Lost,Nexara Robotics,2026-04-30,LR-AUTONOMY-ROADMAP
+D-2205,Rhine Chemical,Process Automation,EMEA,SEG-INDUSTRIAL-DATA,890000,Closed,Lost,Sable Lattice,2026-02-11,LR-DATA-READINESS
+D-2206,Sonora Mining,Energy Systems,LATAM,SEG-PREDICTIVE-MAINT,540000,Closed,Won,,2025-09-30,
+D-2207,Great Lakes Foundry,Motion Systems,NA,SEG-FLEET-AUTONOMY,412000,Closed,Lost,Halcyon Autonomy,2026-05-19,LR-AUTONOMY-ROADMAP
+D-2208,Iberia Cement,Process Automation,EMEA,SEG-AGENTIC-OPS,268000,Closed,Lost,Praxis Loop,2026-01-08,LR-NO-AGENTIC-OPS
+D-2209,Ohio Valley Plastics,Motion Systems,NA,SEG-VISION-QA,155000,Closed,Won,,2025-10-17,
+D-2210,Nordvind Energi,Energy Systems,EMEA,SEG-PREDICTIVE-MAINT,720000,Closed,Won,Cindermill Systems,2026-02-27,
+D-2211,Guangdong Assembly,Motion Systems,APAC,SEG-FLEET-AUTONOMY,935000,Closed,Lost,Nexara Robotics,2026-06-12,LR-AUTONOMY-ROADMAP
+D-2212,Alberta Upgrading,Energy Systems,NA,SEG-INDUSTRIAL-DATA,610000,Closed,Lost,Sable Lattice,2025-12-03,LR-INTEGRATION-EFFORT
+D-2213,Veneto Packaging,Process Automation,EMEA,SEG-VISION-QA,198000,Closed,Won,Bright Anvil,2026-03-25,
+D-2214,Carolina Textiles,Motion Systems,NA,SEG-FLEET-AUTONOMY,287000,Closed,Lost,Kestrel Torque,2026-04-02,LR-AUTONOMY-ROADMAP
+D-2215,Osaka Fabrication,Motion Systems,APAC,SEG-AGENTIC-OPS,344000,Closed,Lost,Tessellate Ops,2026-05-28,LR-NO-AGENTIC-OPS
+D-2216,Rustbelt Rail,Energy Systems,NA,SEG-PREDICTIVE-MAINT,475000,Closed,Won,,2025-11-19,
+D-2217,Loire Aerospace,Motion Systems,EMEA,SEG-FLEET-AUTONOMY,1120000,Closed,Lost,Nexara Robotics,2026-07-08,LR-AUTONOMY-ROADMAP
+D-2218,Puget Semiconductor,Process Automation,NA,SEG-VISION-QA,830000,Closed,Won,Orbital Kiln,2026-06-30,
+D-2219,Bahia Petrochem,Process Automation,LATAM,SEG-INDUSTRIAL-DATA,395000,Closed,Lost,Argent Flow,2026-02-19,LR-DATA-READINESS
+D-2220,Yorkshire Glass,Process Automation,EMEA,SEG-PREDICTIVE-MAINT,240000,Closed,Won,Volta Sentinel,2025-12-15,
+D-2221,Sinaloa Agro Processing,Process Automation,LATAM,SEG-AGENTIC-OPS,182000,Closed,Lost,Praxis Loop,2026-06-04,LR-NO-AGENTIC-OPS
+D-2222,Michigan Stamping,Motion Systems,NA,SEG-FLEET-AUTONOMY,520000,Closed,Lost,Nexara Robotics,2026-07-21,LR-AUTONOMY-ROADMAP
+D-2223,Jutland Wind,Energy Systems,EMEA,SEG-PREDICTIVE-MAINT,668000,Closed,Won,,2026-04-15,
+D-2224,Shenzhen Modular,Motion Systems,APAC,SEG-PHYSICAL-AI,760000,Closed,Lost,Ferrous Mind,2026-05-06,LR-AUTONOMY-ROADMAP
+D-2225,Tennessee Appliance,Motion Systems,NA,SEG-VISION-QA,144000,Closed,Won,,2025-10-28,
+D-2226,Wallonia Rolling,Process Automation,EMEA,SEG-INDUSTRIAL-DATA,455000,Closed,Won,,2026-01-30,
+D-2227,Chubu Turbine,Energy Systems,APAC,SEG-PREDICTIVE-MAINT,915000,Closed,Lost,Cindermill Systems,2026-03-11,LR-PRICE
+D-2228,Front Range Brewing,Process Automation,NA,SEG-AGENTIC-OPS,126000,Closed,Won,,2025-11-12,
+D-2229,Normandy Dairy,Process Automation,EMEA,SEG-VISION-QA,167000,Closed,Lost,Bright Anvil,2026-02-05,LR-PRICE
+D-2230,Pilbara Ore,Energy Systems,APAC,SEG-FLEET-AUTONOMY,1340000,Closed,Lost,Halcyon Autonomy,2026-06-25,LR-AUTONOMY-ROADMAP
+D-2231,Saxony Motors,Motion Systems,EMEA,SEG-PHYSICAL-AI,588000,Closed,Lost,Ferrous Mind,2026-07-14,LR-AUTONOMY-ROADMAP
+D-2232,Hudson Valley Optics,Process Automation,NA,SEG-VISION-QA,212000,Closed,Won,,2026-05-21,
+D-2233,Sichuan Heavy,Motion Systems,APAC,SEG-FLEET-AUTONOMY,430000,Closed,Lost,Kestrel Torque,2026-08-03,LR-AUTONOMY-ROADMAP
+D-2234,Basque Turbines,Energy Systems,EMEA,SEG-PREDICTIVE-MAINT,505000,Closed,Won,,2026-03-19,
+D-2235,Gulf Coast LNG,Energy Systems,NA,SEG-INDUSTRIAL-DATA,1050000,Closed,Lost,Sable Lattice,2026-04-22,LR-INTEGRATION-EFFORT
+D-2236,Kyushu Ceramics,Process Automation,APAC,SEG-VISION-QA,178000,Closed,Won,,2025-12-08,
+D-2237,Piedmont Furniture,Motion Systems,NA,SEG-AGENTIC-OPS,134000,Closed,Lost,Tessellate Ops,2026-07-30,LR-NO-AGENTIC-OPS
+D-2238,Silesia Coking,Process Automation,EMEA,SEG-PREDICTIVE-MAINT,362000,Closed,Won,Volta Sentinel,2026-06-11,
+D-2239,Sao Paulo Assembly,Motion Systems,LATAM,SEG-FLEET-AUTONOMY,690000,Closed,Lost,Nexara Robotics,2026-08-14,LR-AUTONOMY-ROADMAP
+D-2240,Alsace Pharma,Process Automation,EMEA,SEG-AGENTIC-OPS,298000,Closed,Won,,2026-02-24,
+D-2241,Nevada Battery,Energy Systems,NA,SEG-PREDICTIVE-MAINT,845000,Closed,Won,,2026-07-02,
+D-2242,Tohoku Press,Motion Systems,APAC,SEG-FLEET-AUTONOMY,375000,Open,Open,Nexara Robotics,2026-11-30,
+D-2243,Flanders Recycling,Process Automation,EMEA,SEG-INDUSTRIAL-DATA,520000,Open,Open,Argent Flow,2026-10-15,
+D-2244,Great Basin Solar,Energy Systems,NA,SEG-PREDICTIVE-MAINT,930000,Open,Open,Cindermill Systems,2026-12-18,
+D-2245,Jiangsu Motors,Motion Systems,APAC,SEG-PHYSICAL-AI,1180000,Open,Open,Ferrous Mind,2027-01-29,
+D-2246,Occitanie Composites,Motion Systems,EMEA,SEG-FLEET-AUTONOMY,610000,Open,Open,Halcyon Autonomy,2026-11-06,
+D-2247,Lakeshore Chemicals,Process Automation,NA,SEG-AGENTIC-OPS,255000,Open,Open,Praxis Loop,2026-10-30,
+D-2248,Queensland Alumina,Energy Systems,APAC,SEG-INDUSTRIAL-DATA,780000,Open,Open,Sable Lattice,2027-02-12,

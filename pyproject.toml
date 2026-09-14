@@ -1,0 +1,48 @@
+[project]
+name = "deep-research-agent"
+version = "0.1.0"
+description = "Multi-agent deep research: fuses public-internet signal with a customer's internal data into an executive-ready investment memo."
+readme = "README.md"
+requires-python = ">=3.10,<3.14"
+
+dependencies = [
+    # Orchestration
+    "crewai[tools]==1.15.21",
+    # HTTP + caching (reproducible, keyless-capable research)
+    "requests>=2.32",
+    "requests-cache>=1.3.3",
+    # Content extraction
+    "trafilatura>=2.2.0",
+    # Keyless search fallbacks
+    "ddgs>=9.16.0",
+    "feedparser>=6.0.11",
+    # Rendering
+    "jinja2>=3.1",
+    "markdown>=3.7",
+    "pyyaml>=6.0",
+    # Presentation build
+    "python-pptx>=1.0.2",
+    # Demo surface
+    "streamlit>=1.40",
+]
+
+[project.scripts]
+deep_research = "deep_research.main:run"
+kickoff = "deep_research.main:kickoff"
+run_crew = "deep_research.main:run"
+plot = "deep_research.main:plot"
+
+[tool.crewai]
+type = "flow"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/deep_research"]
+
+[tool.ruff]
+# The code is written to 110 columns. Stated here so a linter run agrees with
+# the file it is linting instead of reporting every line as too long.
+line-length = 110

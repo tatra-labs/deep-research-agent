@@ -1,0 +1,173 @@
+fuse_signals:
+  description: >
+    Join the external research and the internal assessment into cross-signal
+    findings about {topic}.
+
+    EXTERNAL FINDINGS
+    {external}
+
+    INTERNAL ASSESSMENT
+    {internal}
+
+    Produce between three and six cross-signal findings. Each must satisfy all
+    of the following, and you should discard any candidate that does not:
+
+    - It cites at least one external evidence item, with a real http(s) URL
+      taken from the research above. If you cannot cite a real URL, do not
+      write the finding at all. Never write "source unavailable", "N/A", or
+      any other placeholder in a URL field, and never offer the ABSENCE of
+      external news as though absence were evidence.
+    - It cites at least one internal finding, with its record identifiers.
+    - It could not have been written from either side on its own. State exactly
+      what the join adds, in the field why_this_needs_both.
+
+    HOW THE TWO SIDES JOIN. This matters, and getting it wrong will make you
+    discard the best findings:
+
+    The external and internal evidence are joined on MARKET SEGMENT, not on
+    company name. Our internal records name private counterparties -- customers,
+    suppliers, acquisition targets -- and those companies will not appear in
+    public sources at all. That is normal and it is not a defect in the
+    evidence.
+
+    So external evidence does not need to name the same company as the internal
+    record. Its job is to establish where the SEGMENT is going: that capital is
+    entering it, that buyers now expect the capability, that the technology has
+    become feasible. The internal record's job is to establish OUR POSITION in
+    that same segment. The finding is the collision between the two.
+
+    A finding is legitimate when the external evidence changes what the
+    internal fact MEANS. "We pay a supplier who beats us" is a procurement
+    footnote on its own; set against evidence that the segment is consolidating
+    and being funded, the same fact becomes a strategic emergency with a
+    deadline. That change of meaning is the finding.
+    - It is expressed as a conclusion with a consequence, not an observation.
+      Not "there is investment in this segment", but "the segment absorbing the
+      most outside capital is the one where we rate our own capability weakest
+      and have already lost a specific amount of revenue".
+
+    Look specifically for these four shapes, which are the ones that tend to
+    exist in practice:
+
+    - A position the company formally adopted that external evidence now
+      contradicts.
+    - A supplier the company pays that is also winning business against it.
+    - A segment attracting external capital where internal capability is rated
+      low and revenue is being lost.
+    - An external development arriving close to a known contractual date.
+
+    Use the analysis tools to check any internal figure you rely on, rather
+    than trusting a paraphrase of it. Verify record identifiers with the record
+    lookup tool. Never invent an identifier.
+
+    Assign urgency and confidence honestly. Where internal evidence is strong
+    and external evidence is thin, say medium or low; do not round up in order
+    to sound decisive.
+  expected_output: >
+    A set of cross-signal findings, each with a headline conclusion, external
+    evidence with URLs, internal evidence with record identifiers, an
+    explanation of what the join adds, an implication, urgency and confidence.
+  agent: cross_signal_analyst
+
+challenge_signals:
+  description: >
+    Review the cross-signal findings and harden them.
+
+    Apply the amputation test to every finding, in both directions. Remove the
+    external evidence, then remove the internal evidence, and ask each time:
+    does the CONCLUSION still carry its force, its urgency and its consequence?
+
+    Test the conclusion, not the raw fact. Almost any single fact remains true
+    in isolation -- that is not what the test is for. The question is whether
+    the finding still tells an executive to DO something. "We pay a company
+    that also beats us in the market" stays true with the external evidence
+    removed, but it degrades from a strategic emergency to a procurement note,
+    and the urgency evaporates. That finding PASSES the test, because the join
+    is carrying the force of the conclusion.
+
+    A finding FAILS only when removing one side leaves the conclusion and its
+    urgency essentially intact -- meaning that side was decoration.
+
+    Prefer rewriting to dropping. If a finding is real but its join is stated
+    weakly, sharpen why_this_needs_both until the dependency is explicit,
+    rather than discarding a genuine finding on a technicality. Drop a finding
+    only if it has no real external URL, no resolvable internal record, or no
+    genuine dependency between the two.
+
+    Do not drop a finding merely because the external evidence describes the
+    market rather than naming the specific company in our records. Segment-level
+    external evidence joined to a company-specific internal record is the
+    intended shape of this analysis, not a weakness in it.
+
+    Then:
+
+    - Downgrade any confidence rating the evidence does not support.
+    - Populate contradictions. Work through the adopted_positions list in the
+      internal assessment ONE BY ONE -- that list is what this company
+      currently believes -- and for each position ask: does the external
+      evidence support it, or has the outside world moved past it?
+
+      Record every position the evidence now contradicts, quoting the adopted
+      position verbatim, citing its record identifier, and naming the external
+      evidence that overtakes it. An adopted position that has expired is the
+      single most valuable thing this analysis can surface, because the company
+      is still acting on it.
+
+      If every adopted position survives contact with the evidence, say so
+      explicitly in gaps rather than leaving contradictions silently empty --
+      an empty list should mean "checked and found none", not "did not look".
+    - Populate gaps: what this analysis could not establish, stated plainly and
+      specifically. "The size of the most recent financing round for a named
+      company could not be verified from a primary source" is a useful gap.
+      "More research is needed" is not. Include at least two real gaps; if the
+      analysis genuinely has none, state which checks you ran to conclude that.
+
+    If you do drop a finding, record it in the `rejected` field with a one-line
+    reason. A dropped candidate is information about the run, and the report
+    states it rather than hiding it.
+
+    Return the hardened findings, the contradictions, the gaps and anything
+    rejected.
+  expected_output: >
+    A fusion result containing only findings that survive the amputation test,
+    plus explicit contradictions with record identifiers, plus specific gaps.
+  agent: contrarian_reviewer
+  context:
+    - fuse_signals
+
+test_adopted_positions:
+  description: >
+    Test what {customer} currently believes against what the outside world
+    shows, for {topic}.
+
+    THE POSITIONS THIS COMPANY HAS ADOPTED are in the adopted_positions list of
+    the internal assessment below. That list is the input to this task.
+
+    INTERNAL ASSESSMENT
+    {internal}
+
+    EXTERNAL FINDINGS
+    {external}
+
+    Work through the adopted positions ONE AT A TIME. Do not summarise the set
+    and do not skip any. For each position, decide between exactly three
+    outcomes:
+
+    - CONTRADICTED: the external evidence shows the position is no longer true.
+      Quote the position verbatim, cite its record identifier, and name the
+      external evidence with its URL that overtakes it. This is the most
+      valuable output of the entire analysis, because the company is still
+      acting on the position.
+    - UPHELD: the external evidence supports the position. Cite the identifier
+      and say briefly what supports it.
+    - UNTESTABLE: this run found no external evidence either way. Say so
+      plainly. Never resolve a position by guessing.
+
+    Every position must appear in exactly one of the three lists. Judge the
+    position as written, against the evidence gathered -- not against your own
+    view of the industry.
+  expected_output: >
+    Three lists covering every adopted position: those the evidence
+    contradicts, with quotes, identifiers and contradicting sources; those it
+    upholds; and those this run could not test.
+  agent: position_examiner

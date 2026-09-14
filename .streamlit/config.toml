@@ -1,0 +1,40 @@
+# Theme for the demonstration interface.
+#
+# This file exists because of a bug that only appears on someone else's
+# machine. The interface paints a light background in its own CSS, but without
+# a declared theme Streamlit picks light or dark from the viewer's system
+# preference and colours its own components -- tab labels, captions, widget
+# text, body copy -- to match that choice. A viewer whose system is set to dark
+# therefore got near-white text on the light background this app paints:
+# invisible until hovered, because hover applies a different colour.
+#
+# Declaring the theme fixes it at the source. Streamlit now derives every
+# component colour from the values below, so nothing is left to the viewer's
+# preference and the interface looks the same on every machine. Overriding
+# Streamlit's internal class names in CSS would have papered over it for the
+# components I happened to test, and broken again on the next version.
+#
+# The palette matches the report itself (render/report.py) and the deck, so a
+# memo on screen and the same memo printed are recognisably one document.
+
+[theme]
+base = "light"
+
+primaryColor = "#B4472A"             # one accent: the industrial rust
+backgroundColor = "#FAFAF8"          # paper, not white
+secondaryBackgroundColor = "#F1F0EC" # sidebar, widget fills, table headers
+textColor = "#12161C"                # near-black, not black
+linkColor = "#B4472A"
+borderColor = "#E2E1DC"
+codeBackgroundColor = "#FBF1ED"
+
+font = "sans-serif"
+headingFont = "sans-serif"
+showWidgetBorder = true
+
+[server]
+# The interface reads and writes only inside the project directory.
+headless = true
+
+[browser]
+gatherUsageStats = false

@@ -1,0 +1,131 @@
+research_shifts:
+  description: >
+    Establish what has genuinely changed in this market: {topic}
+
+    Research brief to work from:
+    {brief}
+
+    Search the public web and read the most credible sources you find. Consult
+    research preprints to judge whether a capability is becoming technically
+    feasible, since that leads commercial availability.
+
+    For every claim you report you must record the URL you got it from, the
+    publication date where available, and which segment identifier it speaks
+    to. Prefer five well-sourced claims to fifteen thin ones. If you cannot
+    source a claim, discard it rather than softening it.
+
+    Today's date is {today}.
+  expected_output: >
+    A set of evidence items describing genuine changes in this market, each
+    with a claim, source URL, date where known, confidence and segment.
+  agent: shift_analyst
+  async_execution: true
+
+research_incumbents:
+  description: >
+    Establish how the established leaders are moving in this market: {topic}
+
+    Research brief to work from:
+    {brief}
+
+    Use the regulatory filing search as your primary instrument. Run the filing
+    queries from the brief. Pay particular attention to which named companies
+    and which industries appear in the aggregate counts, since that tells you
+    who is engaging with this capability at a level that carries legal weight.
+    Supplement with web search for product announcements from those same
+    companies.
+
+    Record the URL for every claim. Name the companies explicitly.
+
+    Today's date is {today}.
+  expected_output: >
+    A set of evidence items describing how incumbents are moving, each with a
+    claim, source URL, named entities, date where known and segment.
+  agent: incumbent_analyst
+  async_execution: true
+
+research_entrants:
+  description: >
+    Identify credible new entrants in this market: {topic}
+
+    Research brief to work from:
+    {brief}
+
+    Use three instruments deliberately. Search regulatory filings with
+    forms='S-1' to find companies newly registering to go public, which is a
+    strong signal of a company crossing into seriousness. Search developer
+    community discussion for launches and for whether practitioners respect the
+    product. Search the web for company announcements.
+
+    For each entrant, state what they do, what evidence you have that they are
+    credible, and which segment they attack. Where you conclude a well-known
+    name is NOT a real threat, say so and say why.
+
+    Today's date is {today}.
+  expected_output: >
+    A set of evidence items on new entrants, each with a claim, source URL,
+    named entities and segment, including any judged not to be a threat.
+  agent: entrant_scout
+  async_execution: true
+
+research_capital:
+  description: >
+    Establish where investment is flowing in this market: {topic}
+
+    Research brief to work from:
+    {brief}
+
+    Search for financing activity and read the most substantive sources.
+    Regulatory filings are useful here because registration and offering
+    documents are primary records rather than reports about records.
+
+    Report the direction and concentration of capital by segment, not just a
+    list of rounds. Where an amount is reported rather than verified in a
+    filing, label it as reported. State plainly if you could not establish
+    figures for a segment.
+
+    Today's date is {today}.
+  expected_output: >
+    A set of evidence items on investment activity, each with a claim, source
+    URL, amount where known, date, named entities and segment.
+  agent: capital_analyst
+  async_execution: true
+
+consolidate_external:
+  description: >
+    Consolidate the four research streams into a single external findings set
+    for {topic}.
+
+    Do not re-research. Your job is to assemble, deduplicate and quality-check.
+
+    Rules:
+    - Drop any claim that has no source URL. An unsourced claim is not evidence.
+      Never invent a placeholder like "source unavailable" to fill the field --
+      a claim you cannot source must be left out entirely.
+    - A URL must be one the search tools actually returned, pointing at the
+      page that carries the claim. Never construct a URL, and never cite a
+      tool's own home page or search form -- sec.gov/edgar/search,
+      hn.algolia.com and the like are where you looked, not what you found.
+    - FINDING NOTHING IS A RESULT, AND IT IS NOT EVIDENCE. If a question
+      returned nothing usable, put it in sources_unavailable and say what you
+      searched for. Do not turn it into an evidence item with a URL attached,
+      because "no new entrants were found" and "there are no new entrants" are
+      different statements and only the first one is true.
+    - Where two streams found the same thing, keep the better-sourced version.
+    - Sort each category so the strongest, best-sourced evidence comes first.
+    - Keep AT MOST 6 evidence items per category. This is an executive evidence
+      set, not an archive; a seventh item has never changed a decision. Choose
+      the six that would survive being challenged.
+    - Write a summary of at most 150 words stating what an informed outsider
+      would now conclude about this market.
+    - List any sources or categories where you could not establish anything, so
+      the final report can say so honestly rather than staying silent.
+  expected_output: >
+    A consolidated external findings set with four evidence categories, a
+    summary, and an explicit list of anything that could not be established.
+  agent: research_editor
+  context:
+    - research_shifts
+    - research_incumbents
+    - research_entrants
+    - research_capital

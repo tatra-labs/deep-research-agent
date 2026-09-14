@@ -1,0 +1,87 @@
+{
+  "as_of": "2026-FY-Q2",
+  "owner": "Group Strategy — Capability Office",
+  "scale": "1 = no capability, 2 = pilot only, 3 = productised in one BU, 4 = productised group-wide, 5 = differentiating vs market",
+  "capabilities": [
+    {
+      "capability_id": "CAP-01",
+      "name": "Single-asset predictive maintenance",
+      "segment_tag": "SEG-PREDICTIVE-MAINT",
+      "maturity": 4,
+      "owner_bu": "Energy Systems",
+      "owner": "A. Lindqvist",
+      "evidence": "Deployed on 2,300 rotating assets; 11% unplanned-downtime reduction verified FY25",
+      "gaps": "Model retraining is manual; no cross-plant transfer learning"
+    },
+    {
+      "capability_id": "CAP-02",
+      "name": "Fleet-level autonomy orchestration",
+      "segment_tag": "SEG-FLEET-AUTONOMY",
+      "maturity": 2,
+      "owner_bu": "Digital & Software",
+      "owner": "L. Varga",
+      "evidence": "Aurora pilot only — single cell, 6 robots, licensed third-party orchestration layer",
+      "gaps": "No multi-cell coordination, no fleet scheduler, no roadmap approved beyond the pilot. Dependent on an external SDK we do not control."
+    },
+    {
+      "capability_id": "CAP-03",
+      "name": "Vision-based quality inspection",
+      "segment_tag": "SEG-VISION-QA",
+      "maturity": 4,
+      "owner_bu": "Process Automation",
+      "owner": "P. Novak",
+      "evidence": "Shipped in 31 customer installations; strongest win rate of any product line",
+      "gaps": "Hardware sourced externally; margin compression if supplier moves up-stack"
+    },
+    {
+      "capability_id": "CAP-04",
+      "name": "Industrial data fabric / unified namespace",
+      "segment_tag": "SEG-INDUSTRIAL-DATA",
+      "maturity": 2,
+      "owner_bu": "Digital & Software",
+      "owner": "L. Varga",
+      "evidence": "Two plant pilots on third-party middleware; no group standard",
+      "gaps": "No native offering. Core DCS platform is single-vendor and the data layer is effectively controlled by that vendor."
+    },
+    {
+      "capability_id": "CAP-05",
+      "name": "Agentic workflow automation for operations",
+      "segment_tag": "SEG-AGENTIC-OPS",
+      "maturity": 1,
+      "owner_bu": "Digital & Software",
+      "owner": "M. Duarte",
+      "evidence": "No group capability. Two departmental tools purchased outside the architecture roadmap.",
+      "gaps": "No strategy, no owner above department level, no security review of the tools in use"
+    },
+    {
+      "capability_id": "CAP-06",
+      "name": "Robot foundation models / physical AI",
+      "segment_tag": "SEG-PHYSICAL-AI",
+      "maturity": 1,
+      "owner_bu": "Digital & Software",
+      "owner": "L. Varga",
+      "evidence": "Research licence against a third-party API; no internal model work",
+      "gaps": "No in-house capability, no data strategy for robot telemetry, no build/buy position"
+    },
+    {
+      "capability_id": "CAP-07",
+      "name": "Systems integration and commissioning",
+      "segment_tag": null,
+      "maturity": 5,
+      "owner_bu": "Process Automation",
+      "owner": "R. Okonjo",
+      "evidence": "1,400 engineers; recognised as the primary reason customers select Meridian",
+      "gaps": "Scales linearly with headcount; not software-leveraged"
+    },
+    {
+      "capability_id": "CAP-08",
+      "name": "Motion control hardware",
+      "segment_tag": null,
+      "maturity": 5,
+      "owner_bu": "Motion Systems",
+      "owner": "J. Aturi",
+      "evidence": "Group's historic profit engine; #2 global share",
+      "gaps": "Commoditising; software attach rate is the strategic question"
+    }
+  ]
+}
