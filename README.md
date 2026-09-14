@@ -143,7 +143,7 @@ anything has been run and before anything has been spent. Five views:
 
 | | |
 |---|---|
-| **How it ran** | A timeline of the run, per-phase attribution of tool calls, model calls and tokens, and which tools did the work |
+| **How it ran** | The run as a timeline, as a live crew diagram, or both — with per-phase attribution of tool calls, model calls and tokens, and which tools did the work |
 | **Findings that needed both sides** | Each cross-source finding with its external and internal evidence side by side, plus the candidates that were rejected |
 | **Verification** | The three checks, what the audit said, and every adopted position tested against the evidence |
 | **The memo** | The report itself, downloadable as Markdown or a print-ready page |
@@ -156,9 +156,22 @@ the same code as a live one. And the **trace is a first-class view**, not a
 debug panel, because "how do I know it actually did that" is the first question
 anyone sensible asks.
 
-The timeline is worth a look for one specific reason: the two research phases
-appear as overlapping bars, which is the evidence that they genuinely run
-concurrently rather than an assertion that they do.
+### Two ways to watch it, one cursor
+
+The **timeline** is a waterfall of phases. The **crew graph** is the same run
+drawn as the system: every crew and the agents inside it, the typed object that
+travels along each arrow, and the parts that were running highlighted. Switch
+between them at any point, during a run or after it.
+
+Both read one cursor, so moving it moves the highlighted nodes, the marker on
+the timeline and which card is open together. That is what lets the two be
+checked against each other: the graph claims the two research legs run at the
+same time, and the timeline shows the overlapping bars that prove it. Clicking
+a box in the graph opens that phase's card.
+
+Each phase is a card that opens on click: what it handed to the next phase, the
+agents that did the work and the tools each one called, and every event it
+emitted, in order.
 
 ---
 
@@ -289,6 +302,8 @@ src/deep_research/
     citations.py        Numbered references; readable identifier runs
   deck/build.py         Deck, speaker notes and register from YAML
   observability/        One event listener, three consumers
+    trace.py            The flat event stream, shaped into phases and totals
+    graph.py            The flow's topology, and what was running when
 scripts/warm_cache.py   Pre-warm and audit the response cache
 app.py                  Demonstration interface
 .cache/http.sqlite      Committed API responses (~2 MB, audited)
