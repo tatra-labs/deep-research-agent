@@ -24,6 +24,10 @@ db/
 # Run artifacts (a curated sample lives in sample_output/ and IS committed)
 output/
 
+# Frames from an interrupted video build; the finished file lands in deck/
+.video_build/
+.deck_images/
+
 # NOTE: .cache/ is deliberately COMMITTED. http.sqlite holds primary-source API
 # responses and search_results.json holds recorded search result sets; together
 # they let this repository be reproduced with no search credentials and no

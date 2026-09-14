@@ -20,6 +20,8 @@ picture quietly wrong while the numbers beside it stay right.
 
 from __future__ import annotations
 
+import re
+
 from . import trace as tracelib
 
 CANVAS = (1320, 476)
@@ -447,3 +449,31 @@ def active_agents(snap: dict) -> list[str]:
             if agent["state"] == "active":
                 out.append(name)
     return out
+
+
+def point_at(path_d: str, t: float) -> tuple[float, float]:
+    """A point along one of the edge paths this module generates.
+
+    Only the two path shapes built above are understood -- a straight line and
+    a single cubic bend -- which is the whole grammar here and keeps this from
+    becoming a path parser. The interface does not need it: a browser animates
+    a payload along an edge on its own. A rendered video does, because every
+    frame has to be placed deliberately rather than caught wherever the
+    browser's clock happened to be.
+
+    `t` is the curve parameter, not arc length. For a dot travelling an edge
+    the difference is invisible, and solving for arc length would be precision
+    nobody can see.
+    """
+    numbers = [float(n) for n in re.findall(r"-?\d+(?:\.\d+)?", path_d)]
+    t = min(max(t, 0.0), 1.0)
+    if "C" in path_d and len(numbers) >= 8:
+        (x0, y0, x1, y1, x2, y2, x3, y3) = numbers[:8]
+        u = 1.0 - t
+        x = u**3 * x0 + 3 * u**2 * t * x1 + 3 * u * t**2 * x2 + t**3 * x3
+        y = u**3 * y0 + 3 * u**2 * t * y1 + 3 * u * t**2 * y2 + t**3 * y3
+        return x, y
+    if len(numbers) >= 4:
+        x0, y0, x1, y1 = numbers[:4]
+        return x0 + (x1 - x0) * t, y0 + (y1 - y0) * t
+    return 0.0, 0.0

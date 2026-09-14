@@ -38,9 +38,18 @@ PHASE_LABELS = {
 PHASE_PURPOSE = {
     "intake": "Normalise the question and stamp the run.",
     "plan": "Turn the question into sub-questions, segments and search queries.",
-    "research_external": "Four analysts read the public record in parallel, then an editor drops anything unsourced.",
-    "assess_internal": "Exact arithmetic over the internal records, plus retrieval for what the numbers cannot say.",
-    "fuse": "Test each adopted position against the evidence, then keep only findings that need both sources.",
+    "research_external": (
+        "Four analysts read the public record in parallel, then an editor drops "
+        "anything unsourced."
+    ),
+    "assess_internal": (
+        "Exact arithmetic over the internal records, plus retrieval for what the "
+        "numbers cannot say."
+    ),
+    "fuse": (
+        "Test each adopted position against the evidence, then keep only findings "
+        "that need both sources."
+    ),
     "draft_and_audit": "Write the memo, then check every claim against the record it cites.",
     "audit_gate": "Publish, or send the draft back once.",
     "revise": "Rewrite the claims the audit rejected.",

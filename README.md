@@ -173,6 +173,57 @@ Each phase is a card that opens on click: what it handed to the next phase, the
 agents that did the work and the tools each one called, and every event it
 emitted, in order.
 
+### A rendered walkthrough
+
+```bash
+uv run python scripts/make_video.py     # deck/run_walkthrough.mp4
+```
+
+For anyone who is not driving: a fixed walkthrough of the committed run — the
+raw input, then the raw event stream, then every view over it, then the memo
+itself. It is generated rather than screen-recorded, frame by frame through the
+same renderer the interface uses, so it cannot drift from the repository. Needs
+Chrome and ffmpeg; nothing else in the project does.
+
+---
+
+## Putting it online
+
+The interface is a Streamlit app, so it needs somewhere that can hold a process
+open. Streamlit keeps a websocket per session to push each rerun, and one
+research run takes minutes; a serverless host gives you neither a socket nor
+that long, so platforms in that shape -- Vercel and the like -- cannot run this
+whatever the configuration says.
+
+**Streamlit Community Cloud** is the fit. From
+[share.streamlit.io](https://share.streamlit.io):
+
+| | |
+|---|---|
+| Repository | `tatra-labs/deep-research-agent` |
+| Branch | `master` |
+| Main file | `app.py` |
+| Python version | 3.12 |
+| Secret | `OPENAI_API_KEY = "sk-..."` |
+
+Two files exist only for that host. `requirements.txt` is the resolved lock
+exported from `uv.lock`, because Community Cloud reads neither `uv.lock` nor a
+`pyproject.toml` that is not Poetry's. `.python-version` pins the interpreter.
+Regenerate the first after any dependency change:
+
+```bash
+uv export --no-hashes --no-dev --no-emit-project > requirements.txt
+```
+
+Nothing else changes. The committed cache and the sample run are in the
+repository, so the app opens on a finished run with its full trace before
+anyone spends anything.
+
+**A deployed app is a button that spends money.** Anyone with the link can
+start a run against your credentials. Adding `DR_DISABLE_RUN = "1"` to the
+app's secrets turns the interface into a reader of the runs already committed
+-- every view, every trace, no spend -- and takes effect without a redeploy.
+
 ---
 
 ## Design decisions
@@ -304,7 +355,11 @@ src/deep_research/
   observability/        One event listener, three consumers
     trace.py            The flat event stream, shaped into phases and totals
     graph.py            The flow's topology, and what was running when
+    views.py            The markup for every view, shared by app and video
+requirements.txt        Resolved lock, for hosts that cannot read uv.lock
 scripts/warm_cache.py   Pre-warm and audit the response cache
+  make_video.py         The rendered walkthrough, frame by frame
+  make_deck_images.py   The deck's pictures, rendered from the same files
 app.py                  Demonstration interface
 .cache/http.sqlite      Committed API responses (~2 MB, audited)
   search_results.json   Recorded search result sets, readable JSON
